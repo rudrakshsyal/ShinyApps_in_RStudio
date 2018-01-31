@@ -1,0 +1,17 @@
+Rscript load.R
+Rscript listing_profile_segregated.R
+Rscript Conversion_by_Tier.R
+Rscript daily_unique_transactions.R
+Rscript monthly_unique_transactions.R
+Rscript traffic_dch_daily.R
+Rscript traffic_dch_source.R
+Rscript traffic_direct.R
+Rscript monetised_transactions.R
+Rscript FQS.R
+Rscript cpt_weekly_tracker.R
+Rscript gmv_vpe_dch.R
+Rscript liquidity.R
+Rscript cpt_churn.R
+Rscript process.R
+Rscript tv_computations_4factor.R
+Rscript app.R

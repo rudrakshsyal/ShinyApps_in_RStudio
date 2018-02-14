@@ -22,18 +22,6 @@ options(java.parameters = "-Xmx8192m")
 ## download Amazon Redshift JDBC driver ##
 # download.file('http://s3.amazonaws.com/redshift-downloads/drivers/RedshiftJDBC41-1.1.9.1009.jar','RedshiftJDBC41-1.1.9.1009.jar')
 
-# Connect to Amazon Redshift
-driver <- JDBC("com.amazon.redshift.jdbc41.Driver", "RedshiftJDBC41-1.1.9.1009.jar", identifier.quote="`")
-url <- "jdbc:redshift://localhost:5439/practowarehouse?user=rudraksh_syal&password=7zSghmdy864HdTy8"
-
-conn <- dbConnect(driver, url)
-
-## One time run for TOKEN ##
-# client.id <- "446530658631-tgglr9ngoba0nr0vgruefci35s7dd6r4.apps.googleusercontent.com"
-# client.secret <- "lUjGAVkjNOCwRIu2wIOXDD8t"
-# token <- Auth(client.id,client.secret)
-# save(token,file="./token_file")
-
 load("./token_file")
 ValidateToken(token)
 
